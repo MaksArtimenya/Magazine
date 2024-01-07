@@ -1,0 +1,108 @@
+/* Стиль для логотипа */
+.logo {
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Стиль для подвала */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+/* Стиль для иконок контактов */
+.footer i {
+    font-size: 24px; 
+    color: white; 
+    /* margin: 10px;  */
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+}
+.footer2-c {
+    display: flex;
+    padding: 0px 128px 0px 128px;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.footer2-c-about {
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 24px; */
+    flex: 1 0 0;
+}
+.footer2-c-about i {
+    font-size: 24px; 
+    color: white; 
+    margin: 10px; 
+}
+.footer2-c-map {
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    /* align-self: stretch; */
+}
+.footer2-c-map img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    /* align-self: stretch; */
+    max-width: 600px;
+}
+/* Стиль для средних экранов (от 768 до 1200 пикселей) */
+@media (min-width: 768px) and (max-width: 1200px) {
+.footer2-c {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.footer2-c-about {
+    width: 80%;
+}
+
+.footer2-c-map {
+    width: 60%;
+}
+.footer2-c-map img {
+    max-width: 500px;
+}
+}
+
+/* Стиль для маленьких экранов (меньше 768 пикселей) */
+@media (max-width: 768px) {
+.footer2-c {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.footer2-c-about {
+    width: 90%;
+}
+
+.footer2-c-map {
+    width: 80%; 
+}
+.footer2-c-map img {
+    max-width: 300px;
+}
+}

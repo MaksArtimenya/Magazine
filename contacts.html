@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный магазин</title>
+    <!-- Подключение Bootstrap 5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Подключение стилей CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Стиль для формы обратной связи */
+        .form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Логотип -->
+            <a class="navbar-brand logo" href="index.html">Электронный магазин</a>
+            <!-- Кнопка для мобильных устройств -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Ссылки на другие страницы -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Секция с формой обратной связи -->
+    <div class="container">
+        <h2 class="text-center mt-4">Свяжитесь с нами</h2>
+        <p class="text-center">Если у вас есть вопросы, пожелания или предложения, заполните форму ниже и мы ответим вам в ближайшее время.</p>
+        <div class="form">
+            <!-- Форма обратной связи -->
+            <form action="/action_page.php">
+                <!-- Поле для имени -->
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Введите ваше имя" required>
+                </div>
+                <!-- Поле для электронной почты -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Введите ваш email" required>
+                </div>
+                <!-- Поле для темы сообщения -->
+                <div class="form-group">
+                    <label for="subject">Тема</label>
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Введите тему сообщения" required>
+                </div>
+                <!-- Поле для текста сообщения -->
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Введите текст сообщения" rows="5" required></textarea>
+                </div>
+                <p></p>
+                <!-- Кнопка для отправки формы -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+                <p></p>
+            </form>
+        </div>
+    </div>
+    <!-- Подвал -->
+    <!-- <div class="footer">
+        <div class="container">
+            <p class="text-center">© 2024 Электронный магазин. Все права защищены.</p>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-vk"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+
+            <a href="https://www.google.com/maps/place/Minsk" class="map-link">
+                <img src="images/map.png" class="map-img" alt="Карта Минска">
+            </a>
+        </div>
+        
+    </div> -->
+    <div class="footer2">
+        <div class="footer2-c">
+            <div class="footer2-c-about">
+                <p>© 2024 Электронный магазин. Все права защищены.</p>
+                <p>г.Пинск, ул.Советская, д.37</p>
+                <p>+375 (29) 362-34-36   +375 (33) 664-70-80</p>
+                <p>maksimartimenya@yandex.ru</p>
+                <div class="container">
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-vk"></i></a>
+                    <a href="#"><i class="fa fa-telegram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+                
+            </div>
+            <div class="footer2-c-map">
+                <img src="images/map.png">
+            </div>
+        </div>
+    </div>
+    <!-- Подключение Bootstrap 5 и jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

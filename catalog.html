@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный магазин</title>
+    <!-- Подключение Bootstrap 5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Подключение стилей CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Стиль для карточек продуктов */
+        .card {
+            height: 100%;
+        }
+
+        /* Стиль для изображений в карточках */
+        .card-img-top {
+            height: 200px;
+            object-fit: contain;
+            padding: 10px;
+        }
+
+        /* Стиль для цен в карточках */
+        .card-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        /* Стиль для поля поиска */
+        form {
+            display: flex;
+            align-items: center;
+            margin: 20px; 
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        input {
+            flex: 1;
+            height: 40px; 
+            padding: 10px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button {
+            width: 100px;
+            height: 40px; 
+            margin-left: 10px;
+            background-color: #007bff; 
+            border: none; 
+            border-radius: 5px; 
+            color: white; 
+            font-size: 18px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Логотип -->
+            <a class="navbar-brand logo" href="index.html">Электронный магазин</a>
+            <!-- Кнопка для мобильных устройств -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Ссылки на другие страницы -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Секция с каталогом продуктов -->
+    <div class="container">
+        <h2 class="text-center mt-4">Каталог продуктов</h2>
+        <form action="/search.php">
+            <input type="search" name="query" placeholder="Поиск товаров" required>
+            <button type="submit">Найти</button>
+        </form>
+        <div class="row">
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Ноутбук">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Ноутбуки</h5> -->
+                        <a href="#" class="btn btn-primary">Ноутбуки</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/smartphones.webp" class="card-img-top" alt="Смартфон">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Смартфоны</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/headphones.jpg" class="card-img-top" alt="Наушники">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Наушники</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/tablet.jpg" class="card-img-top" alt="Планшет">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Планшеты</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/tv.jpg" class="card-img-top" alt="Телевизор">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Телевизоры</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/coffee machine.jpg" class="card-img-top" alt="Кофемашина">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Кофемашины</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/smartwatch.jpg" class="card-img-top" alt="Умные часы">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Умные часы</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/photo camera.jpeg" class="card-img-top" alt="Фотоаппараты">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Фотоаппараты</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/portable battery.jpg" class="card-img-top" alt="Портативные аккумуляторы">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Портативные аккумуляторы</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/smart speaker.jpg" class="card-img-top" alt="Умные колонки">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Умные колонки</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/electronical book.jpg" class="card-img-top" alt="Электронные книги">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Электронные книги</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка продукта -->
+            <div class="col-md-4 col-sm-6 mt-4">
+                <div class="card">
+                    <img src="images/gamesconsole.webp" class="card-img-top" alt="Игровые консоли">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Игровые консоли</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <P></P>
+    <!-- Подвал -->
+    <!-- <div class="footer">
+        <div class="container">
+            <p class="text-center">© 2024 Электронный магазин. Все права защищены.</p>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-vk"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div> -->
+    <div class="footer2">
+        <div class="footer2-c">
+            <div class="footer2-c-about">
+                <p>© 2024 Электронный магазин. Все права защищены.</p>
+                <p>г.Пинск, ул.Советская, д.37</p>
+                <p>+375 (29) 362-34-36   +375 (33) 664-70-80</p>
+                <p>maksimartimenya@yandex.ru</p>
+                <div class="container">
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-vk"></i></a>
+                    <a href="#"><i class="fa fa-telegram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+                
+            </div>
+            <div class="footer2-c-map">
+                <img src="images/map.png">
+            </div>
+        </div>
+    </div>
+    <!-- Подключение Bootstrap 5 и jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
